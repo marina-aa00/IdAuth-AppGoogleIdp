@@ -24,6 +24,34 @@
 
         </div>
     </div>
+    <div class="row text-center">
+      <div class="card-body">
+          
+              <h2 class="card-text">Your name is:</h2>
+
+      </div>
+  </div>
+    <div class="row text-center">
+      <div class="card-body">
+          
+              <h4 class="card-text" th:text="${userName}"></h4>
+
+      </div>
+  </div>
+  <div class="row text-center">
+    <div class="card-body">
+        
+            <h2 class="card-text">Your email is:</h2>
+
+    </div>
+</div>
+<div class="row text-center">
+  <div class="card-body">
+      
+          <h4 class="card-text" th:text="${email}"></h4>
+
+  </div>
+</div>
     <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
     <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 
