@@ -11,7 +11,10 @@ public class GoogleIdpController {
     }
     
     @GetMapping("/authenticated")
-    public String autenticado() {
+    public String user(Model model,
+                        @AuthenticationPrincipal OidcUser oidcUser) {
+        model.addAttribute("userName", oidcUser.getFullName());
+        model.addAttribute("email", oidcUser.getEmail());
         return "auth/authenticated.html";
     }
 
