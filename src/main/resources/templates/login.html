@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Google IdP</title>
+<link th:href="@{/css/style.css}" rel="stylesheet" />
+</head>
+<body>
+    
+<h1 style="text-align:center">Welcome!</h1>  
+
+<div class="container">
+<div class="wrapper">
+<div class="title"><span>To access, please sign in</span></div>
+<form th:action="@{/oauth2/authorization/google}" method="post" autocomplete="off">
+<img class="card-img-top" th:src="@{/img/uc3m.JPG}" width="400" height="225">
+<div class="row button">
+<input type="submit" value="Sign in with Google">
+</div>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+         
+
+          
+          
+
+        
+        
+
+     
